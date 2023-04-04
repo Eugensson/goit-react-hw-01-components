@@ -1,11 +1,12 @@
 .transactionHistory {
   margin: 0 auto;
   width: 900px;
+  background-color: #fff;
   border: 1px solid #000000;
 }
 
 .transactionHead {
-  background-color: teal;
+  background-color: rgb(0, 212, 212);
 }
 
 .transactionHeadText {
