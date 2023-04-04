@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from 'components/FriendList/FriendList.module.css';
 
-function FriendListItem({ isOnline, avatar, name, id }) {
+function FriendListItem({ isOnline, avatar, name }) {
   const statusClassName = isOnline ? 'status-online' : 'status-offline';
   return (
     <li className={css.item}>
