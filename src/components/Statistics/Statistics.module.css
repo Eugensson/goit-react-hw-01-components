@@ -1,23 +1,42 @@
 .statistics {
-  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 2px;
+  margin: 0 auto;
 }
 
 .title {
+  display: block;
+  padding: 30px;
   margin: 0;
+  text-align: center;
+  background-color: #fff;
 }
 
 .statList {
+  display: inline-flex;
   margin: 0;
+  padding: 0;
 }
 
 .item {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50px;
+  list-style: none;
+  padding: 15px;
 }
 
 .label {
-  margin: 0;
+  text-align: center;
+  font-style: 14px;
+  color: #fff;
 }
 
 .percentage {
-  margin: 0;
+  text-align: center;
+  font-style: 18px;
+  font-weight: 700;
+  color: #fff;
 }
