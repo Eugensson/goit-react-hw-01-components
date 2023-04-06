@@ -29,6 +29,15 @@ export const Status = styled.span`
   height: 15px;
   border-radius: 50%;
   background-color: ${props => {
-    return props.isOnline ? 'green' : 'red';
+    // return props.isOnline ? 'green' : 'red';
+
+    switch (props.isOnline) {
+      case true:
+        return 'green';
+      case false:
+        return 'red';
+      default:
+        return 'black';
+    }
   }};
 `;
