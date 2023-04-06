@@ -1,4 +1,6 @@
-.item {
+import styled from '@emotion/styled';
+
+export const Item = styled.li`
   display: flex;
   align-items: center;
   justify-content: left;
@@ -10,29 +12,23 @@
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 4px 2px 2px #999696;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
   border-radius: 2px;
-}
+`;
 
-.name {
+export const Name = styled.p`
   font-size: 18px;
   font-weight: 700;
-}
+`;
 
-.online {
+export const Status = styled.span`
   display: block;
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: green;
-}
-
-.offline {
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: red;
-}
+  background-color: ${props => {
+    return props.isOnline ? 'green' : 'red';
+  }};
+`;
